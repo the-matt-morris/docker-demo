@@ -4,7 +4,12 @@ import re
 from typing import TYPE_CHECKING, Tuple
 
 import libgeohash as gh
-from pydantic import ConstrainedFloat, ConstrainedInt, ConstrainedStr, validate_arguments
+from pydantic import (
+    ConstrainedFloat,
+    ConstrainedInt,
+    ConstrainedStr,
+    validate_arguments,
+)
 
 
 if TYPE_CHECKING:

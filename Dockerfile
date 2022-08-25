@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . /app
 
 # Install python dependencies
+RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 EXPOSE 8501
