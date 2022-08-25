@@ -1,0 +1,17 @@
+# Coverage configuration file
+
+# Coverage.py:
+  # https://coverage.readthedocs.io/en/coverage-5.5/index.html
+
+# Configuration Reference
+  # https://coverage.readthedocs.io/en/coverage-5.5/config.html
+
+
+[run]
+
+# Note: This will import all python files in current directory as source, as well in any subdirectories with a __init__.py file.
+source = project
+
+[report]
+exclude_lines = 
+  if TYPE_CHECKING:
