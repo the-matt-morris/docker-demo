@@ -15,8 +15,8 @@ def main():
     )
 
     # Encoding
-    lat = st.number_input("Latitude", Latitude.ge, Latitude.le)
-    lon = st.number_input("Longitude", Longitude.ge, Longitude.le)
+    lat = st.number_input("Latitude", Latitude.ge, Latitude.le, format="%f")
+    lon = st.number_input("Longitude", Longitude.ge, Longitude.le, format="%f")
     precision = st.number_input("Precision", GeoPrecision.ge, GeoPrecision.le, 12)
 
     if st.button("Encode"):

@@ -29,12 +29,12 @@ else:
         )
 
     class Latitude(ConstrainedFloat):
-        ge = -90
-        le = 90
+        ge = -90.0
+        le = 90.0
 
     class Longitude(ConstrainedFloat):
-        ge = -180
-        le = 180
+        ge = -180.0
+        le = 180.0
 
 
 Coordinates = Tuple[Latitude, Longitude]
